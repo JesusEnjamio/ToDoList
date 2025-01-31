@@ -1,0 +1,86 @@
+/* Estilos globales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc; /* Fondo suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 400px; /* Ancho fijo */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo del campo de entrada */
+.todo-input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Lista de tareas */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* 🔹 Estilos de cada tarea */
+.todo-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px; /* 📌 Espacio entre tareas */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* 🔹 Botones alineados en fila */
+.todo-buttons {
+  display: flex;
+  gap: 10px; /* 📌 Espaciado entre botones */
+}
+
+/* 🔹 Botón general */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+/* 🔹 Botón eliminar */
+.delete-btn {
+  background-color: #f44336;
+}
+
+/* 🔹 Efecto hover en botones */
+button:hover {
+  opacity: 0.8;
+}
