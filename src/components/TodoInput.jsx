@@ -1,4 +1,3 @@
-// src/components/TodoInput.jsx
 import React, { useState } from "react";
 
 const TodoInput = ({ addTask }) => {
@@ -8,7 +7,7 @@ const TodoInput = ({ addTask }) => {
     e.preventDefault();
     if (newTask) {
       addTask(newTask);
-      setNewTask(""); // Limpiar el campo de entrada
+      setNewTask(""); 
     }
   };
 

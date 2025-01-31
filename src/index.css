@@ -1,7 +1,7 @@
-/* Estilos globales */
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f7fc; /* Fondo suave */
+  background-color: #f4f7fc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +9,12 @@ body {
   margin: 0;
 }
 
-/* Contenedor principal */
+
 .container {
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  width: 400px; /* Ancho fijo */
+  width: 400px;
   padding: 20px;
 }
 
@@ -25,7 +25,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Estilo del campo de entrada */
+
 .todo-input {
   width: calc(100% - 22px);
   padding: 10px;
@@ -37,50 +37,61 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* Lista de tareas */
+
 ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
 
-/* 🔹 Estilos de cada tarea */
+
 .todo-item {
   background-color: #fff;
   border-radius: 8px;
   padding: 12px;
-  margin-bottom: 12px; /* 📌 Espacio entre tareas */
+  margin-bottom: 12px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
-/* 🔹 Botones alineados en fila */
-.todo-buttons {
-  display: flex;
-  gap: 10px; /* 📌 Espaciado entre botones */
+
+.todo-text {
+  flex: 1; 
+  text-align: left;
+  padding-right: 10px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
 
-/* 🔹 Botón general */
+
+.todo-buttons {
+  display: flex;
+  gap: 6px; 
+}
+
+
 button {
   background-color: #4caf50;
   color: white;
   border: none;
-  padding: 8px 14px;
+  padding: 6px 10px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9rem;
   transition: background 0.3s;
+  min-width: 35px; /
 }
 
-/* 🔹 Botón eliminar */
+
 .delete-btn {
   background-color: #f44336;
 }
 
-/* 🔹 Efecto hover en botones */
+
 button:hover {
   opacity: 0.8;
 }
